@@ -35,10 +35,27 @@
     </style>
     <!-- End Buttons -->
 
+    <!-- Style Title login -->
+    <style name="TextAppearance.Shrine.Title" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <!-- End Style Title -->
+
+    <!-- Toolbar Style -->
+
     <style name="Widget.Shrine.Toolbar" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">?attr/colorAccent</item>
         <item name="android:theme">@style/Theme.Shrine</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Shrine.Toolbar</item>
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
     </style>
+
+    <style name="TextAppearance.Shrine.Toolbar" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- End Toolbar -->
 
 </resources>
