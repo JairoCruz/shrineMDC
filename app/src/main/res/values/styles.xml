@@ -69,4 +69,10 @@
 
     <!-- End Toolbar -->
 
+    <!-- Style Backdrop -->
+    <style name="Widget.Shrine.Backdrop" parent="">
+        <item name="android:background">?attr/colorAccent</item>
+    </style>
+    <!-- End Style Backdrop -->
+
 </resources>
