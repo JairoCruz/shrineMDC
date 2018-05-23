@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
 import android.view.*
+import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.GridLayout
 import com.google.codelabs.mdc.kotlin.shrine.network.ProductEntry
 import com.google.codelabs.mdc.kotlin.shrine.staggeredgridlayout.StaggeredProductCardRecyclerViewAdapter
@@ -26,6 +27,8 @@ class ProductGridFragment : Fragment() {
 
         // Add Toolbar
         (activity as AppCompatActivity).setSupportActionBar(view.app_bar)
+        // Set up a Listener to icon Toolbar
+        view.app_bar.setNavigationOnClickListener(NavigationIconClickListener(activity!!, view.product_grid, AccelerateDecelerateInterpolator()))
 
         // Set up the RecyclerView
         view.recycler_view.setHasFixedSize(true)
