@@ -7,18 +7,28 @@
     android:layout_height="match_parent"
     tools:context=".ProductGridFragment">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        style="@style/Widget.Shrine.Backdrop"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:paddingTop="100dp"
-        android:paddingBottom="100dp">
+        android:layout_height="match_parent">
 
-        <include layout="@layout/shr_backdrop"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Shrine.Backdrop"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="100dp"
+            android:paddingBottom="150dp"
+            >
 
-    </LinearLayout>
+            <include layout="@layout/shr_backdrop"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -53,7 +63,7 @@
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
     </android.support.v4.widget.NestedScrollView>
 
